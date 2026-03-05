@@ -1,0 +1,59 @@
+﻿<Window x:Class="QuizLaender2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizLaender2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="20">
+
+        <StackPanel>
+
+            <TextBlock Text="Punkte:" FontSize="18" Margin="0,10"/>
+            <TextBlock Text="{Binding Score}" FontSize="30" Foreground="Chocolate"/>
+
+            <TextBlock Text="Zeit:"
+           FontSize="18"
+           Margin="0,10"/>
+
+            <TextBlock Text="{Binding TimeLeft}"
+           FontSize="30"
+           Foreground="Red"/>
+
+            <TextBlock Text="Leben:"
+            FontSize="18"
+            Margin="0,10"/>
+            <TextBlock Text="{Binding Lifes}"
+            FontSize="30"
+            Foreground="Aqua"/>      
+
+            <Image Source="{Binding CurrentFlag}" 
+               Height="150"
+               Margin="0,20"/>
+
+            <ItemsControl ItemsSource="{Binding AnswerOptions}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="2"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding}"
+                    Click="Button_Click"
+                    Margin="10"
+                    Height="60"
+                    FontSize="18"
+                    Background="#3498db"
+                    Foreground="White"
+                    BorderThickness="0"/>   
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
