@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{9653927A-C6D4-4015-A16C-0B0CE3E1E2E0}|QuizLaender2\\QuizLaender2.csproj|solutionrelative:quizlaender2\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9653927A-C6D4-4015-A16C-0B0CE3E1E2E0}|QuizLaender2\\QuizLaender2.csproj|c:\\users\\student\\source\\repos\\quizlaender2\\quizlaender2\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "AbsoluteMoniker": "D:0:0:{9653927A-C6D4-4015-A16C-0B0CE3E1E2E0}|QuizLaender2\\QuizLaender2.csproj|C:\\Users\\Student\\source\\repos\\QuizLaender2\\quizlaender2\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{9653927A-C6D4-4015-A16C-0B0CE3E1E2E0}|QuizLaender2\\QuizLaender2.csproj|solutionrelative:quizlaender2\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "QuizLaender2\\.gitignore",
               "ToolTip": "C:\\Users\\Student\\source\\repos\\QuizLaender2\\QuizLaender2\\.gitignore",
               "RelativeToolTip": "QuizLaender2\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowDwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-03-09T15:56:55.776Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "QuizLaender2\\README.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-09T15:27:47.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T15:27:47.998Z"
             },
             {
               "$type": "Document",
