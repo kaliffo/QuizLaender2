@@ -42,6 +42,15 @@ namespace QuizLaender2.ViewModels
                 _timeLeft = value;
                 OnPropertyChanged();
                 OnPropertyChanged(nameof(TimerColor));
+                OnPropertyChanged(nameof(PercentText));
+            }
+        }
+        public string PercentText
+        {
+            get
+            {
+                double percent = (double)TimeLeft / 10 * 100;
+                return $"⏱ {percent:0}%";
             }
         }
         public string TimerColor
