@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuizLaender2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="650" Width="1000" WindowStartupLocation="CenterScreen">
     <Grid Margin="20">
 
         <StackPanel>
@@ -13,13 +13,41 @@
             <TextBlock Text="Punkte:" FontSize="18" Margin="0,10"/>
             <TextBlock Text="{Binding Score}" FontSize="30" Foreground="Chocolate"/>
 
-            <TextBlock Text="Zeit:"
+            <!--<TextBlock Text="Zeit:"
            FontSize="18"
            Margin="0,10"/>
 
-            <TextBlock Text="{Binding TimeLeft}"
+           <TextBlock Text="{Binding TimeLeft}"
            FontSize="30"
-           Foreground="Red"/>
+           Foreground="Red"/>-->
+
+            <ProgressBar Height="25"
+             Width="250"
+             Minimum="0"
+             Maximum="10"
+             Value="{Binding TimeLeft}"
+             Foreground="{Binding TimerColor}">
+
+                <ProgressBar.Style>
+                    <Style TargetType="ProgressBar">
+                        <Setter Property="Foreground" Value="Green"/>
+
+                        <Style.Triggers>
+
+                            <DataTrigger Binding="{Binding TimeLeft}" Value="5">
+                                <Setter Property="Foreground" Value="Orange"/>
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding TimeLeft}" Value="2">
+                                <Setter Property="Foreground" Value="Red"/>
+                            </DataTrigger>
+
+                        </Style.Triggers>
+
+                    </Style>
+                </ProgressBar.Style>
+
+            </ProgressBar>
 
             <TextBlock Text="Leben:"
             FontSize="18"
