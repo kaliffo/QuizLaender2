@@ -41,6 +41,16 @@ namespace QuizLaender2.ViewModels
             {
                 _timeLeft = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(TimerColor));
+            }
+        }
+        public string TimerColor
+        {
+            get
+            {
+                if (TimeLeft <= 2) return "Red";
+                if (TimeLeft <= 5) return "Orange";
+                return "Green";
             }
         }
         public int Lifes
